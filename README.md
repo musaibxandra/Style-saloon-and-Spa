@@ -31,6 +31,9 @@ Showcases services, pricing, appointment booking, and an elegant gallery to high
 ---
 
 ## 🛠️ Tech Stack
+- Languages: HTML, CSS, Javascript/Typscript
+- Library: React, HeroIcons, React-Lucide
+- Package Manager: Node.JS
 - **Framework:** [Next.js](https://nextjs.org/)  
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com/)  
