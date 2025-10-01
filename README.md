@@ -1,3 +1,51 @@
+# ✨ Style Salon – Modern Beauty & Spa Website
+
+A sleek, responsive salon and spa website built with **Next.js**, **Tailwind CSS**, and **shadcn/ui**.  
+Showcases services, pricing, appointment booking, and an elegant gallery to highlight your brand’s style.
+
+---
+
+## 🌐 Live Demo
+👉 [View Website](https://your-website-link.com)  
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page Screenshot](public/icons/snapshot_2.png)
+
+### Services
+![Services Screenshot](public/icons/snapshot_1.png)
+
+
+---
+
+## 🚀 Features
+- 💇 Service pages with pricing  
+- 📅 Appointment booking system  
+- 📸 Gallery & portfolio section  
+- 📱 Fully responsive, mobile-first design  
+- 🎨 Customizable theme with Tailwind & shadcn components  
+
+---
+
+## 🛠️ Tech Stack
+- **Framework:** [Next.js](https://nextjs.org/)  
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/)  
+
+---
+
+## 📂 Getting Started
+
+Clone the repository:
+```bash
+git clone https://github.com/yourusername/style-salon.git
+cd style-salon
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
