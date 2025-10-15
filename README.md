@@ -1,4 +1,4 @@
-# ✨ Style Salon – Modern Beauty & Spa
+# Style Salon – Modern Beauty & Spa
 
 A sleek, responsive salon and spa website built with **Next.js**, **Tailwind CSS**, and **shadcn/ui**.  
 Showcases services, pricing, appointment booking, and an elegant gallery to highlight your brand’s style.
