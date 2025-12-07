@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 // Example Shadcn-style Footer component
 // - Uses Tailwind utility classes
@@ -14,19 +15,23 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-200 w-full overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full min-w-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Brand & Social */}
-          <div className="space-y-4">
-            <Image
-              src="/icons/logo_copy.png"
-              alt="Style logo"
-              width={164}
-              height={24}>
-            </Image>
-            <h3 className="text-2xl font-semibold">Style Saloon & Spa</h3>
-            <p className="text-sm opacity-80">
+          <div className="space-y-3 sm:space-y-4">
+            <Link href="/"
+            className='flex cursor-pointer gap-2 items-center'>
+              <Image
+                src="/icons/logo.jpg"
+                alt="Style logo"
+                width={80}
+                height={80}
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain">
+              </Image>
+            </Link>
+            <h3 className="text-xl sm:text-2xl font-semibold">Elementary Learning</h3>
+            <p className="text-xs sm:text-sm opacity-80">
               H369 R7307 B373 Abu Ghazal <br/> Tubli, Manama, Bahrain
             </p>
 
@@ -41,10 +46,10 @@ export default function Footer() {
           </div>
 
           {/* Sitemap / Links */}
-          <div className="grid grid-cols-2 gap-6 md:col-span-1">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:col-span-1">
             <div>
-              <h4 className="text-sm font-medium mb-3">Product</h4>
-              <ul className="space-y-2 text-sm opacity-90">
+              <h4 className="text-xs sm:text-sm font-medium mb-2 sm:mb-3">Product</h4>
+              <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm opacity-90">
                 <li>
                   <a href="#" className="hover:underline">
                     Services
@@ -64,8 +69,8 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-sm font-medium mb-3">Company</h4>
-              <ul className="space-y-2 text-sm opacity-90">
+              <h4 className="text-xs sm:text-sm font-medium mb-2 sm:mb-3">Company</h4>
+              <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm opacity-90">
                 <li>
                   <a href="#" className="hover:underline">
                     About
@@ -86,14 +91,14 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h4 className="text-sm font-medium mb-3">Stay in the loop</h4>
-            <p className="text-sm opacity-80 mb-4">Get product updates, tips, and early access.</p>
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h4 className="text-xs sm:text-sm font-medium mb-2 sm:mb-3">Stay in the loop</h4>
+            <p className="text-xs sm:text-sm opacity-80 mb-3 sm:mb-4">Get product updates, tips, and early access.</p>
 
-            <Card className="p-2">
-              <CardContent className="p-4">
+            <Card className="p-2 sm:p-3">
+              <CardContent className="p-3 sm:p-4">
                 <form
-                  className="flex flex-col sm:flex-row gap-3"
+                  className="flex flex-col sm:flex-row gap-2 sm:gap-3"
                   onSubmit={(e) => {
                     e.preventDefault();
                     // Replace with real subscription logic
@@ -111,6 +116,7 @@ export default function Footer() {
                         placeholder="Email address"
                         aria-label="Email address"
                         required
+                        className="text-sm sm:text-base"
                       />
                       <div className="absolute inset-y-0 right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                         <Mail className="w-4 h-4 opacity-80" />
@@ -118,21 +124,21 @@ export default function Footer() {
                     </div>
                   </div>
 
-                  <Button type="submit">Subscribe</Button>
+                  <Button type="submit" className="text-xs sm:text-sm px-4 py-2">Subscribe</Button>
                 </form>
               </CardContent>
             </Card>
 
-            <p className="text-xs opacity-70 mt-3">
+            <p className="text-xs opacity-70 mt-2 sm:mt-3">
               We respect your privacy. Unsubscribe at any time.
             </p>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-gray-200 dark:border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm opacity-80">© {new Date().getFullYear()} YourBrand. All rights reserved.</p>
+        <div className="mt-6 sm:mt-10 border-t border-gray-200 dark:border-gray-800 pt-4 sm:pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+          <p className="text-xs sm:text-sm opacity-80 text-center sm:text-left">© {new Date().getFullYear()} YourBrand. All rights reserved.</p>
 
-          <nav className="flex items-center gap-4 text-sm opacity-90">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm opacity-90">
             <a href="#" className="hover:underline">
               Terms
             </a>

@@ -6,12 +6,12 @@ export const navbarLinks = [
 },
     {
     imgURL: "/icons/dollar-circle.svg",
-    route: "/session-details",
-    label: "Session details"
+    route: "/",
+    label: "Courses"
 },
     {
     imgURL: "/icons/money-send.svg",
-    route: "/why-choose-us",
+    route: "/",
     label: "Why Choose Us?"
 }
 ]

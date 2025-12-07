@@ -7,12 +7,10 @@ import React from 'react'
 
 const pageLayout = () => {
   return (
-    <main className=''>
-      <Navbar />
+    <main className='w-full min-w-0 overflow-x-hidden'>
       <Header />
       <HowItWorks />
       <Sessions />
-      <Footer />
     </main>
   )
 }

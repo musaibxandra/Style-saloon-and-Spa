@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <div>
       <Feature1
-      title="Indulge in Radiant Beauty & Relaxation"
-      description="Experience our premium salon & spa services designed to rejuvenate your mind, body, and soul."
+      title="Unlock Your Potential – Learn the Essential Skills that Matter"
+      description="Experience our premium courses and services designed to rejuvenate your mind, body, and soul."
       buttonSecondary={{
-        label: "Book Your Appointment",
+        label: "Subscribe Now",
         href: "https://shadcnblocks.com"
     }}
     />
